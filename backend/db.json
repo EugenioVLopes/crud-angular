@@ -1,0 +1,14 @@
+{
+  "sugestoes": [
+    {
+      "id": 2,
+      "conteudo": "Eugenio",
+      "autoria": "Add legenda ao gráfico"
+    },
+    {
+      "id": 31,
+      "conteudo": "Eugenio",
+      "autoria": "Exibir a sidebar por deafault"
+    }
+  ]
+}
