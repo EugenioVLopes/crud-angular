@@ -1,0 +1,29 @@
+<!--
+  Este arquivo contém o template HTML do componente "Listar Sugestões".
+  Ele exibe uma lista de sugestões cadastradas e permite adicionar novas sugestões.
+
+  Elementos principais:
+  - <header>: Define o cabeçalho da seção, contendo o título "Minhas Sugestões" e um botão para adicionar sugestões.
+  - <div class="mural">: Exibe a lista de sugestões cadastradas usando a diretiva *ngFor para iterar sobre a lista de sugestões.
+  - <app-sugestao>: Componente personalizado que exibe os detalhes de uma sugestão.
+  - <ng-template #semSugestoes>: Template alternativo exibido quando não há sugestões cadastradas.
+
+-->
+<section class="container">
+  <header class="header d-flex">
+    <h2 class="ff-inter">Minhas Sugestões</h2>
+    <button class="botao" routerLink="/criarSugestao">
+      Adicionar sugestão
+    </button>
+  </header>
+  <div class="mural" *ngIf="listaSugestoes.length > 0, else semSugestoes">
+    <div *ngFor="let sugestao of listaSugestoes">
+      <app-sugestao [sugestao]="sugestao"></app-sugestao>
+    </div>
+  </div>
+</section>
+<ng-template #semSugestoes>
+  <div class="ff-inter sem-sugestao">
+    <p>Ainda não há sugestões cadastrados!</p>
+  </div>
+</ng-template>

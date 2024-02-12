@@ -1,0 +1,25 @@
+<!--
+  Componente que representa uma sugestão.
+  Este componente exibe o conteúdo de uma sugestão, juntamente com a autoria.
+  Também possui botões para editar e excluir a sugestão.
+-->
+<div class="sugestao modelo1 ff-roboto-mono" [ngClass]="larguraSugestao()">
+  <p class="conteudo">{{ sugestao.conteudo }}</p>
+  <p class="autoria">
+    <b>{{ sugestao.autoria }}</b>
+  </p>
+  <div class="acoes">
+    <button
+      class="botao-editar"
+      routerLink="/sugestoes/editarSugestao/{{ sugestao.id }}"
+    >
+      <img src="/assets/imagens/icone-editar.png" alt="Ícone de editar" />
+    </button>
+    <button
+      class="botao-excluir"
+      routerLink="/sugestoes/excluirSugestao/{{ sugestao.id }}"
+    >
+      <img src="/assets/imagens/icone-excluir.png" alt="Ícone de excluir" />
+    </button>
+  </div>
+</div>

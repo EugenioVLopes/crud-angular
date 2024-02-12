@@ -1,0 +1,29 @@
+<section class="container editar-sugestoes ff-inter">
+  <header class="header">
+    <h2>Adicione uma <br />nova sugestao:</h2>
+  </header>
+  <form>
+    <label for="sugestao">Sugestao</label>
+    <input
+      type="textarea"
+      class="input"
+      id="sugestao"
+      name="sugestao"
+      placeholder="Digite a sugestao"
+      [(ngModel)]="sugestao.conteudo"
+    />
+    <label for="autoria">Autoria ou fonte</label>
+    <input
+      type="text"
+      class="input"
+      id="autoria"
+      name="autoria"
+      placeholder="Digite a autoria ou fonte"
+      [(ngModel)]="sugestao.autoria"
+    />
+    <div class="acoes">
+      <button (click)="editarSugestao()" class="botao">Salvar</button>
+      <button (click)="cancelar()" class="botao">Cancelar</button>
+    </div>
+  </form>
+</section>

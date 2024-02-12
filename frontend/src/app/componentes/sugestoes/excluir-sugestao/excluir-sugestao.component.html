@@ -1,0 +1,17 @@
+<!--
+  Este arquivo contém o código HTML para o componente de exclusão de sugestões.
+  Ele exibe um modal que solicita a confirmação do usuário para excluir uma sugestão.
+  O modal possui dois botões: "Excluir" e "Cancelar".
+  O botão "Excluir" chama a função "excluirSugestao()" quando clicado.
+  O botão "Cancelar" chama a função "cancelar()" quando clicado.
+-->
+<section class="container excluir-sugestoes ff-inter">
+  <div class="modal">
+    <p>A sugestao será apagada. <br/> Confirma a exclusão?</p>
+    <div class="acoes">
+      <button class="botao botao-excluir" (click)="excluirSugestao()">Excluir</button>
+      <button class="botao botao-cancelar" (click)="cancelar()">Cancelar</button>
+    </div>
+  </div>
+  <div class="overlay"></div>
+</section>

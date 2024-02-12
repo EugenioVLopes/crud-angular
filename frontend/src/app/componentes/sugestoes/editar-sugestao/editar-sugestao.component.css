@@ -1,0 +1,49 @@
+.acoes {
+  display: flex;
+  justify-content: center;
+}
+
+.botao {
+  margin: 5px;
+}
+
+.editar-sugestoes {
+  padding: 2rem 0;
+}
+
+.editar-sugestoes form {
+  background: #c4edff;
+
+  border: none;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem;
+}
+
+.editar-sugestoes form label {
+  color: #154580;
+  font-weight: bold;
+  margin: 0 0 1rem;
+}
+
+.editar-sugestoes form .input {
+  border: none;
+  height: 40px;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  margin: 0.5rem 0 2rem;
+}
+
+.editar-sugestoes form .textarea {
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  margin: 0.5rem 0 2rem;
+}
+
+.modelo1 {
+  box-shadow: 8px 8px 0px #154580;
+}

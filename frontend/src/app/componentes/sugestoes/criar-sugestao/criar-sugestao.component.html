@@ -1,0 +1,37 @@
+<!--
+  Este é o código HTML para o componente "criar-sugestao".
+  Ele exibe um formulário para adicionar uma nova sugestão, com campos para o conteúdo da sugestão e a autoria ou fonte.
+  O formulário possui dois botões, um para enviar a sugestão e outro para cancelar e voltar para a lista de sugestões.
+-->
+<section class="container criar-sugestoes ff-inter">
+  <header class="header">
+    <h2>
+      Adicione uma <br />
+      nova sugestão :
+    </h2>
+  </header>
+  <form action="">
+    <label for="sugestao">Sugestão</label>
+    <input
+      type="text"
+      class="sugestao"
+      id="sugestao"
+      name="sugestao"
+      placeholder="Digite sua sugestao"
+      [(ngModel)]="sugestao.conteudo"
+    />
+    <label for="autoria">Autoria ou fonte</label>
+    <input
+      type="text"
+      class="input"
+      id="autoria"
+      name="autoria"
+      placeholder="Digite a autoria ou fonte"
+      [(ngModel)]="sugestao.autoria"
+    />
+     <div class="acoes">
+      <button (click)="criarSugestao()"  class="botao">Enviar</button>
+      <button  (click)="cancelar()" class="botao" routerLink="/listarSugestoes" >Cancelar</button>
+     </div>
+  </form>
+</section>
